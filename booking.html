@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Бронирование</title>
+</head>
+<body>
+
+	<h1 id="top">Отель Banyan Tree 5*</h1>
+
+	<ul type="square">
+		<li><a href="index.html">Главная страница</a></li>
+		<li><a href="photo.html">Фотогалерея</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+		<li><a href="booking.html">Бронирование</a></li>
+	</ul>
+	
+	<h2>Бронирование номера</h2>
+
+	<form>
+		
+		<h3>Основные данные</h3>
+
+		<label for="name">Ваше Ф.И.О</label>
+		<input type="text" name="fio" id="name" required>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+
+		<label for="phone">Телефон</label>
+		<input type="text" name="phone" id="phone" required>
+		<br><br>
+
+		<label for="date_from">Дата заезда</label>
+		<input type="date" name="date_from" id="date_from">
+
+		<label for="date_till">Дата отъезда</label>
+		<input type="date" name="date_till" id="date_till">
+		<br><br>
+
+		<label for="type_room">Тип номера</label>
+		<select name="type_room" id="type_room">
+			<option value="1">Deluxe Pool Villa</option>
+			<option value="2">Ocean Pool Villa</option>
+			<option value="3">Hillcrest Pool Villas</option>
+			<option value="4">Royal Banyan Pool Villas</option>
+			<option value="5">Sanctuary Pool Villa</option>
+			<option value="6">Grand Sanctuary Pool Villa</option>
+			<option value="7">Presidential Pool Villa</option>
+		</select>
+
+		<label for="adults">Количество взрослых</label>
+		<select name="adults" id="adults">
+			<option value="1">1</option>
+			<option value="2" selected>2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+
+		<label for="kids">Количество детей</label>
+		<select name="kids" id="kids">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+
+		<h2>Тип поездки</h2>
+
+		<input type="radio" name="type_trip" id="type_resort" value="type_resort">
+		<label for="type_resort">Отдых</label>
+		<br>
+
+		<input type="radio" name="type_trip" id="type_business" value="type_business">
+		<label for="type_business">Бизнес</label>
+
+		<h3>Дополнительные опции</h3>
+
+		<input type="checkbox" name="option_1" id="option_1">
+		<label for="option_1">Трансфер из аэропорта</label>
+		<br>
+
+		<input type="checkbox" name="option_2" id="option_2">
+		<label for="option_2">Аренда скутера</label>
+		<br>
+
+		<input type="checkbox" name="option_3" id="option_3">
+		<label for="option_3">Аренда автомобиля</label>
+		<br>
+
+		<input type="checkbox" name="option_4" id="option_4">
+		<label for="option_4">Экскурсия</label>
+		<br><br>
+
+		<label for="comment">Комментарий для бронирования</label><br>
+		<textarea name="name" id="comment" cols="50" rows="5"></textarea>
+		<br><br>
+
+		<input type="submit" value="Забронировать номер"> 
+
+	</form>
+
+	<p><a href="#top">Наверх</a></p>
+	
+</body>
+</html>
